@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Prática 004</title>
+    <style>
+        html {
+            background: linear-gradient(to bottom, #e23e57 0%, #311d3f 100%);
+            font-family: 'Roboto', sans-serif;
+        }
+        body {
+            width: 100vw;
+            height: 40.7vw;
+            margin: 0px;
+        }
+        div#full {
+            width: 500px;
+            height: 150px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #ebebeb;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+        }
+        div#full h1 {
+            text-align: center;
+        }
+        div#res {
+            margin: 10px;
+        }
+        input#txtn1 {
+            width: 100px;
+            height: 20px;
+        }
+        input#txtn2 {
+            width: 100px;
+            height: 20px;
+        }
+        input#botao {
+            background: rgb(1, 122, 1);
+            width: 100px;
+            height: 25px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <!--p><strong>Isto é um parágrafo teste</strong></p>
+    <p>Segundo parágrafo teste</p>-->
+    <div id="full">
+        <h1>Iniciando os estudos no <strong>DOM</strong></h1>
+        <input type="number" name="txtn1" id="txtn1" placeholder="Digite aqui"> +
+        <input type="number" name="txtn2" id="txtn2" placeholder="Digite aqui">
+        <input type="button" value="Somar" id="botao" onclick="somar()">
+        <div id="res">O valor é:</div>
+    </div>
+
+    <script>
+        function somar() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é ${s}`
+        }
+
+        /*var a = window.document.getElementById('msg')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', saiu)
+        function clicar() {
+            a.innerHTML = 'Clicou!'
+            a.style.background = 'green'
+            a.style.boxShadow = '1px p2x 4px rgba(0, 128, 0, 0.39)'
+        }
+        function entrar() {
+            a.innerHTML = 'Entrou!'
+            a.style.background = 'yellow'
+            a.style.color = 'black'
+        }
+        function saiu() {
+            a.innerHTML = 'Saiu!'
+            a.style.background = 'red'
+        }*/
+
+        /*var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0] //...ByIdTagName()[] para selecionar a tag e o valor
+        window.document.write('Segundo parágrafo está escrito assim: ' + p1.innerHTML)
+        var d = window.document.querySelector('div#msg')
+        d.style.background = 'black'
+        d.style.color = 'yellow'*/
+
+        //d.window.document.querySelector('div#msg')
+        //d.innerHTML = `Vou add texto na div com cor e background`
+        
+
+        //var nome = window.prompt('Qual seu nome?')
+        //document.write(`Seu nome é ${nome.toUpperCase()}`)
+
+        //var idade = Number(window.prompt(`QUal sua idade?`))
+        //window.alert(`Sua idade é ${idade}`)
+
+        //var n1 = Number.parseInt(window.prompt('Digite um número:'))
+        //var n2 = Number.parseFloat(window.prompt('Digite outro número: '))
+        //var s = n1 + n2 
+        //window.alert(`A soma de ${n1} e ${n2} é igual a ${s}`)
+        //document.write(`A soma de ${n1} e ${n2} é igual a ${s}`) // printa na tela
+
+        //var nome01 = window.prompt('Qual seu nome?')
+        //document.write(`Seu nome é ${nome01.toUpperCase()} em caixa alta<br>`)
+        //document.write(`Seu nome é ${nome01.toLowerCase()} ficará em caixa pequena<br>`)
+        //document.write(`Seu nome é ${nome01} e tem  ${nome01.length} caractere`)
+
+        //var num1 = Number(window.prompt('Digite um número: '))
+        //var num2 = Number(window.prompt('Digite outro número: '))
+        //var soma = (num1 / num2)
+        //document.write(`A divisão de ${num1} / ${num2} = igual  ${soma}`)
+        //soma.toFixed(2).replace(',','.')
+        //soma.toLocaleStrinf('pt-BR', {style: 'currency', currency: 'BRL'})
+
+        /*var a = 3 + 3
+        var b = a % 5
+        var c = 5 * b ** 2
+        var d = 10 - a / 2
+        var e = 6 * 2 / 6
+        var f = b % e + 4 / e
+        var idade = Number(window.prompt('Qual sua idade?'))
+        var res = idade >= 15 || 17? 'De menor' : 'De maior'*/
+    </script>
+</body>
+</html>
