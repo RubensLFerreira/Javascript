@@ -9,3 +9,15 @@ if (idade < 16) {
         console.log('voto obrigatorio')
     }
 }
+
+/* var idade = 2
+console.log(`Sua idade é ${idade} anos:`)
+if (idade < 12) {
+    console.log('Crinça')
+} else {
+    if (idade > 12 && idade < 18) {
+        console.log('adolescente') 
+    } else {
+        console.log('adulto')
+    }
+} */
