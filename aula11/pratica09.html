@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática 09</title>
+</head>
+<body>
+    <h1>Qual sua nacionalidade?</h1>
+    <input type="text" name="naciona" id="naciona">
+    <input type="button" value="analisar" onclick="verificar()">
+    <div id="res"></div>
+
+    <script>
+        var nac = window.document.getElementById('naciona')
+        var res = window.document.getElementById('res')  
+        var s = toString(nac.value)
+
+        function verificar() {
+            if (s == 'brasil') {
+                res.innerHTML = 'você é br'
+            } else {
+                res.innerHTML = 'vc é estrangeiro'
+            }
+        }
+    </script>
+
+</body>
+</html>
