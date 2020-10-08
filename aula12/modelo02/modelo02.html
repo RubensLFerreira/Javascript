@@ -13,23 +13,28 @@
     </header>
 
     <section>
-        <div id="">
-            <p>Verifique sua idade</p>
-            Ano de nascimento: <input type="text" name="" id="" placeholder="Ex: 1998"><br>
-
-            Gênero: <input type="radio" name="radsex" id="txtm" checked>
-            <label for="">Masculino</label>
-            <input type="radio" name="radsex" id="txtf">
-            <label for="">Feminino</label>
-            <input type="button" value="verificar" onclick="verificar()">
+        <div>
+            <p>Ano de nascimento:
+                <input type="text" name="txtano" id="txtano" placeholder="Ex: 1998">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p><input type="button" value="verificar" onclick="verificar()"></p>
         </div>
-        <div id="res">
 
+        <div id="res">
+            sua idade:
         </div>
     </section>
     
     <footer>
         <p>&copy; Rubens Lima | 2020</p>
     </footer>
+
+    <script src="script02.js"></script>
 </body>
 </html>
