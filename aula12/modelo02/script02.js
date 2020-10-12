@@ -3,7 +3,7 @@ function verificar() {
     var ano = data.getFullYear()
     var fano = document.getElementById('txtano') //add na var o input de idade
     var res = document.querySelector('div#res') // add na var o resultado
-    if (fano.value.length == 0 || Number(fano.value) >= ano) { //para que nn posso add numero 0 ou maior que o ano atual
+    if (fano.value.length == 0 || Number(fano.value) > ano) { //para que nn posso add numero 0 ou maior que o ano atual
         window.alert('[erro] verifique os dados!')
     } else {
         var fsex = document.getElementsByName('radsex')
@@ -14,13 +14,13 @@ function verificar() {
 
         if (fsex[0].checked) {
             genero = 'homem'
-            if (idade >=0 && idade < 10) {
+            if (idade >= 0 && idade < 10) {
                 //criança
-                img.setAttribute = ('src', 'fotobebe-m.png')
-            } else if (idade >= 10 && idade <18 ) {
-                //adolescente
                 img.setAttribute = ('src', 'fotocrianca-m.png')
-            } else if (idade >= 18 && idade < 50) {
+            } else if (idade < 18 ) {
+                //adolescente
+                img.setAttribute = ('src', 'fotoadolescente-m.png')
+            } else if (idade < 50) {
                 //adulto
                 img.setAttribute = ('src', 'fotoadulto-m.png')
             } else {
@@ -29,13 +29,13 @@ function verificar() {
             }
         } else if (fsex[1].checked) {
             genero = 'mulher'
-            if (idade >=0 && idade < 10) {
+            if (idade >= 0 && idade < 10) {
                 //criança
-                img.setAttribute = ('src', 'fotobebe-f.png')
-            } else if (idade >= 10 && idade <18 ) {
-                //adolescente
                 img.setAttribute = ('src', 'fotocrianca-f.png')
-            } else if (idade >= 18 && idade < 50) {
+            } else if (idade < 18 ) {
+                //adolescente
+                img.setAttribute = ('src', 'fotoadolescente-f.png')
+            } else if (idade < 50) {
                 //adulto
                 img.setAttribute = ('src', 'fotoadulto-f.png')
             } else {
@@ -45,7 +45,7 @@ function verificar() {
         }
         res.style.textAlign = 'center'
         res.innerHTML = `Detectamos ${genero} com ${idade} anos`
-        res.appendChild(img) //add um elemento, no img
+        res.appendChild(img) //add um elemento, no caso um img.
     }
    
 }
