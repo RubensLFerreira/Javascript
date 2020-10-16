@@ -9,25 +9,27 @@
 </head>
 <body>
     <header>
-        <h1>Verificador de idade</h1>
+        <h1>Desafio aula 14</h1>
     </header>
 
     <section>
         <div>
-            <p>Ano de nascimento:
-                <input type="text" name="txtano" id="txtano" placeholder="Ex: 1998">
+            <p>Início:
+                <input type="number" name="ini" id="ini" placeholder="Nº de Inicio">
             </p>
-            <p>Sexo:
-                <input type="radio" name="radsex" id="mas" checked>
-                <label for="mas">Masculino</label>
-                <input type="radio" name="radsex" id="fem">
-                <label for="fem">Feminino</label>
+            <p>Fim:
+                <input type="number" name="fim" id="fim" placeholder="Nº de Fim">
             </p>
-            <p><input type="button" value="verificar" onclick="verificar()"></p>
+            <p>Passo:
+                <input type="number" name="pass" id="pass" placeholder="Nº de Passos">
+            </p>
+            <p>Verificar:
+                <input type="button" value="verificar" onclick="verificar()">
+            </p>
         </div>
 
         <div id="res">
-            sua idade:
+            contando:
         </div>
     </section>
     
