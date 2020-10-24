@@ -17,7 +17,9 @@ section {
     padding: 8px;
 }
 
-
+select#flista {
+    width: 150px;
+}
 
 footer {
     text-align: center;
