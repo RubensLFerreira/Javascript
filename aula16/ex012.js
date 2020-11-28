@@ -4,5 +4,3 @@ function fatorial(n) {
 		fat *= c
 }
 console.log(fatorial(5))
-
-//estudar sobre RECURSIVIDADE

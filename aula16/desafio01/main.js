@@ -28,3 +28,6 @@ function adicionar() {
     }
 
 }
+console.log("bla")
+for(let c = 5; c <= 10; c++) {
+    console.log(c)
